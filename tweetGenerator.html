@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fake Tweet Generator by Saqib Ali</title>
+
+    <link rel="stylesheet" type="text/css" href="css/tweetGenerator-css.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tweetGenerator-js.js"></script>
+</head>
+<body>
+
+<div ng-app="" ng-init="name='Freddie Mercury'; usrName = 'FreddieMercury'; tweet = 'I need no sympathy.'; time = '11:22 PM'; date='8th Oct 1975'; rtNum = '77'; lkNum = '82'; dpUrl = 'assets/freddie.jpg'">
+
+    <div id="tweet">
+
+        <div id="dp">
+            <img id="profilePic" src={{dpUrl}} alt="Profile Picture">
+        </div>
+        <div id="nameBox">
+            <p id="name">{{name}}<image id="verified" src="assets/verified.PNG" alt="verified" /></p>
+            <p id="usrName">@{{usrName}}</p>
+        </div>
+
+        <p id="tweetText">{{tweet}}</p>
+        <p id="dateTime"><span id="time">{{time}}</span> - <span id="date">{{date}}</span></p>
+
+        <div id="statsCounter">
+            <p id="retweets"><span id="rtNum">{{rtNum}}</span> Retweets</p>
+            <p id="likes"><span id="lkNum">{{lkNum}}</span> Likes</p>
+            <span id="likers"></span>
+        </div>
+
+        <div id="actions">
+            <span id="reply"><img class="action-icon" src="assets/reply.PNG" alt="Reply" /></span>
+            <span id="retweet"><img src="assets/retweet.PNG" alt="Retweet" class="action-icon"/><span id="statText">{{rtNum}}</span></span>
+            <span id="like"><img  class="action-icon" src="assets/heart.PNG" alt="Heart" /><span id="statText">{{lkNum}}</span></span>
+        </div>
+
+        <div id="dataEntry">
+
+                <label for="name" class="fieldLabel">Name:</label>
+                <input ng-model="name" name="name" type="text" class="inputBox" />
+                <label for="usrName" class="fieldLabel">Username:</label>
+                <input ng-model="usrName" name="usrName" type="text" class="inputBox" />
+                Tweet:
+                <textarea ng-model="tweet" name="tweet" type="text" class="inputBox"></textarea>
+        
+            
+        
+                <label for="date" class="fieldLabel">Date:</label>
+                <input ng-model="date" name="date" type="text" class="inputBox" />
+                <label for="time" class="fieldLabel">Time:</label>
+                <input ng-model="time" name="time" type="text" class="inputBox" />
+                <label for="rtNum" class="fieldLabel">Retweets:</label>
+                <input ng-model="rtNum" name="rtNum" type="text" class="inputBox" />
+                <label for="lkNum" class="fieldLabel">Likes:</label>
+                <input ng-model="lkNum" name="lkNum" type="text" class="inputBox" />
+                <label for="dpUrl" class="fieldLabel">Profile Picture URL:</label>
+                <p id="dpUrlInst">Go to profile or Google > Right Click > Copy Image Address</p>
+                <input ng-model="dpUrl" name="dpUrl" type="text" class="inputBox" />
+        
+            </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+$darkTwitter: (
+    "bg": #15202b,
+    "text": #f3f4f4,
+    "theme": #1b95e0,
+    "highlight": #8798a5
+);
+
+$lightTwitter: (
+    "bg": #ffffff,
+    "text": #14171a,
+    "theme": #45a9e6,
+    "highlight": #6e7f8d
+);
+
+
+@function dark($color){
+    @return map-get($darkTwitter, $color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: dark(bg);
+    color: dark(text);
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+#dataEntry {
+    width: 175px;
+    background-color: lighten(dark(bg), 20%);
+    padding: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    left: 112.5px;
+    top: 100px;
+
+    .inputBox {
+        border: solid 1px dark(highlight);
+        width: 150px;
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+    }
+    #dpUrlInst {
+        word-wrap: break-word;
+        width: 200px;
+        font-size: 14px;
+        padding: 15px 0px;
+    }
+}
+
+#tweet {
+    width: 500px;
+    height: auto;
+    padding: 50px;
+    margin: 0 auto;
+
+    #dp {
+        width: 48px;
+        height: 48px;
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #000000;
+
+        #profilePic {
+            width: 48px;
+            height: auto;
+            position: relative;
+        }
+    }
+    #nameBox {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        line-height: 1.5;
+        position: absolute;
+        padding: 0px 0px 0px 10px;
+        
+        #name {
+            font-weight: bold;
+            font-size: 18px;
+
+            #verified {
+                width: 19px;
+                height: 19px;
+                padding: 0px 0px 0px 5px;
+                position: absolute;
+                top: 5px;
+            }
+
+        }
+
+        #usrName {
+            font-size: 14px;
+            color: dark(highlight);
+        }
+    }
+
+    #tweetText {
+        padding: 20px 5px;
+        font-size: 27px;
+        line-height: 32px;
+        word-wrap: break-word;
+    }
+
+    #dateTime {
+        font-size: 14px;
+        padding: 10px 5px;
+        color: dark(highlight);
+    }
+
+    #statsCounter {
+        padding: 0px 0px 15px 10px;
+        border-top: solid 1px darken(dark(highlight), 25%);
+
+        #retweets, #likes {
+            width: 100px;
+            display: inline-block;
+            font-size: 14px;
+            color: dark(highlight);
+
+            #rtNum, #lkNum {
+                color: dark(text);
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+        #likers {
+            height: fit-content;
+            position: relative;
+            top: 10px;
+        }
+        img {
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px 2px;
+        }
+    }
+
+    #actions {
+        height: 20px;
+        width: auto;
+        padding: 10px 5px;
+        border-top: solid 1px darken(dark(highlight), 25%);
+        font-size: 12px;
+        font-weight: bold;
+        color: dark(highlight);
+    }
+    #statText {
+        position: relative;
+        top: -6px;
+        left: -22px;
+    }
+    .action-icon {
+        height: 20px;
+        width: 20px;
+        padding: 5px 30px 0px 0px;
+    }
+}

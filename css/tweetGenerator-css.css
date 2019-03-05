@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #15202b;
+  color: #f3f4f4;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+#dataEntry {
+  width: 175px;
+  background-color: #365370;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  left: 112.5px;
+  top: 100px;
+}
+
+#dataEntry .inputBox {
+  border: solid 1px #8798a5;
+  width: 150px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+}
+
+#dataEntry #dpUrlInst {
+  word-wrap: break-word;
+  width: 200px;
+  font-size: 14px;
+  padding: 15px 0px;
+}
+
+#tweet {
+  width: 500px;
+  height: auto;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+#tweet #dp {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+#tweet #dp #profilePic {
+  width: 48px;
+  height: auto;
+  position: relative;
+}
+
+#tweet #nameBox {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  line-height: 1.5;
+  position: absolute;
+  padding: 0px 0px 0px 10px;
+}
+
+#tweet #nameBox #name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#tweet #nameBox #name #verified {
+  width: 19px;
+  height: 19px;
+  padding: 0px 0px 0px 5px;
+  position: absolute;
+  top: 5px;
+}
+
+#tweet #nameBox #usrName {
+  font-size: 14px;
+  color: #8798a5;
+}
+
+#tweet #tweetText {
+  padding: 20px 5px;
+  font-size: 27px;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+#tweet #dateTime {
+  font-size: 14px;
+  padding: 10px 5px;
+  color: #8798a5;
+}
+
+#tweet #statsCounter {
+  padding: 0px 0px 15px 10px;
+  border-top: solid 1px #4a5863;
+}
+
+#tweet #statsCounter #retweets, #tweet #statsCounter #likes {
+  width: 100px;
+  display: inline-block;
+  font-size: 14px;
+  color: #8798a5;
+}
+
+#tweet #statsCounter #retweets #rtNum, #tweet #statsCounter #retweets #lkNum, #tweet #statsCounter #likes #rtNum, #tweet #statsCounter #likes #lkNum {
+  color: #f3f4f4;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#tweet #statsCounter #likers {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10px;
+}
+
+#tweet #statsCounter img {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px 2px;
+}
+
+#tweet #actions {
+  height: 20px;
+  width: auto;
+  padding: 10px 5px;
+  border-top: solid 1px #4a5863;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8798a5;
+}
+
+#tweet #statText {
+  position: relative;
+  top: -6px;
+  left: -22px;
+}
+
+#tweet .action-icon {
+  height: 20px;
+  width: 20px;
+  padding: 5px 30px 0px 0px;
+}
+/*# sourceMappingURL=tweetGenerator-css.css.map */
